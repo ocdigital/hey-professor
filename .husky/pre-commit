@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 #execute phpstan
-./vendor/bin/phpstan analyse app --level 5
+./vendor/bin/phpstan
 
 if [ $? -ne 0 ]; then
     echo "Deu ruim com o phpstan";
